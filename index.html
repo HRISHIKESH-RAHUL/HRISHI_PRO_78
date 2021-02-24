@@ -1,0 +1,28 @@
+<html>
+    <head>
+<title>Project-78</title>
+    </head>
+    <body>
+  <h1>My Family Book</h1>
+  <hr>
+  <h3>"The memories we make with our family is everything.” – Candace Cameron Bure.</h3>
+  <br>
+  <br>
+  <img id="family_images" src="me father mother.jpg">
+  <p id="names">ME,MY FATHER AND MY MOTHER</p>
+  <button onclick="next()">NEXT</button>
+  <script>
+      var images = ["my father.jpg","my mother.jpg","me.jpg","my grand father 2.jpg","my grand mother.jpg","me father mother.jpg"];
+      var names_of_members = ["RAHUL VIJAY(MY FATHER)","MANJU MURALI(MY MOTHER)","HRISHIKESH RAHUL(ME)","MURALIDHARAN NAIR K(MY GRANDFATHER)","SREE DEVI(MY GRANDMOTHER)","ME,MY FATHER AND MY MOTHER"];
+      var i = 0;
+function next() {
+  document.getElementById("family_images").src=images[i];
+  document.getElementById("names").innerHTML=names_of_members[i];
+  i++;
+  if (i == 6) {
+    i = 0;
+  }
+};
+      </script>
+      </body>
+    </html>
